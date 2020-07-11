@@ -1,18 +1,23 @@
 ## Użycie konwertera
 
-### 1. Pobieramy plik
+### 1. Instalujemy paczke przez composera:
+```text
+composer require liderit/mt940-converter "^1.0.1"
+```
+
+### 2. Pobieramy plik
 
 ```php
 $doc = $_FILES["documentFile"]["tmp_name"];
 ```
 
-### 2. Pobieramy treść pliku
+### 3. Pobieramy treść pliku
 
 ```php
 $content = file_get_contents($doc);
 ```
 
-### 3. Tworzymy instancje konwertera i importujemy dokument
+### 4. Tworzymy instancje konwertera i importujemy dokument
 
 ```php
 use MT940Converter\MT940Converter;
@@ -25,7 +30,7 @@ try {
 }
 ```
 
-### 4. Obsługujemy wynik
+### 5. Obsługujemy wynik
 
 Wynik konwersji jest przedstawiony w postaci tablicy z dwoma liczbami:
 

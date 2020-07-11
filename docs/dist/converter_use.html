@@ -10,13 +10,16 @@
 </head>
 <body>
 <h2 id="u%C5%BCycie-konwertera">Użycie konwertera</h2>
-<h3 id="1.-pobieramy-plik">1. Pobieramy plik</h3>
+<h3 id="1.-instalujemy-paczke-przez-composera%3A">1. Instalujemy paczke przez composera:</h3>
+<pre class="code-block hljs"><code class="language-text text">composer require liderit/mt940-converter &quot;^1.0.1&quot;
+</code></pre>
+<h3 id="2.-pobieramy-plik">2. Pobieramy plik</h3>
 <pre class="code-block hljs"><code class="language-php php">$doc = $_FILES[<span class="hljs-string">&quot;documentFile&quot;</span>][<span class="hljs-string">&quot;tmp_name&quot;</span>];
 </code></pre>
-<h3 id="2.-pobieramy-tre%C5%9B%C4%87-pliku">2. Pobieramy treść pliku</h3>
+<h3 id="3.-pobieramy-tre%C5%9B%C4%87-pliku">3. Pobieramy treść pliku</h3>
 <pre class="code-block hljs"><code class="language-php php">$content = file_get_contents($doc);
 </code></pre>
-<h3 id="3.-tworzymy-instancje-konwertera-i-importujemy-dokument">3. Tworzymy instancje konwertera i importujemy dokument</h3>
+<h3 id="4.-tworzymy-instancje-konwertera-i-importujemy-dokument">4. Tworzymy instancje konwertera i importujemy dokument</h3>
 <pre class="code-block hljs"><code class="language-php php"><span class="hljs-keyword">use</span> <span class="hljs-title">MT940Converter</span>\<span class="hljs-title">MT940Converter</span>;
 
 <span class="hljs-keyword">try</span> {
@@ -26,7 +29,7 @@
   <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;Błąd&quot;</span>;
 }
 </code></pre>
-<h3 id="4.-obs%C5%82ugujemy-wynik">4. Obsługujemy wynik</h3>
+<h3 id="5.-obs%C5%82ugujemy-wynik">5. Obsługujemy wynik</h3>
 <p>Wynik konwersji jest przedstawiony w postaci tablicy z dwoma liczbami:</p>
 <ul>
 <li>Pierwsza liczba to ilość zaimportowanych wyciągów;</li>
