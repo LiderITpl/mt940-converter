@@ -1,6 +1,6 @@
 {
     "name": "liderit/mt940-converter",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "#PHP7",
     "type": "project",
     "authors": [
@@ -13,6 +13,7 @@
         "php": "^7.2.5",
         "ext-json": "*",
         "ext-mysqli": "*",
+        "ext-mbstring": "*",
         "kingsquare/php-mt940": "^1.5"
     },
     "config": {

@@ -26,7 +26,7 @@
     public function fill(array $attributes) {
       foreach($attributes as $attrKey => $attrValue) {
         if(in_array($attrKey, $this->attrsKeys, true)) {
-          $this->{$attrKey} = $attrValue;
+          $this->{$attrKey} = mb_convert_encoding($attrValue, 'UTF-8');
         }
       }
     }

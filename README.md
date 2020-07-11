@@ -1,10 +1,13 @@
 # mt940-converter
 
-## Dokumentacja:
+## Dokumentacja
 > https://lideritpl.github.io/mt940-converter/
 
-## Testy:
+## Testy
 > https://mt940-converter.liderit.online/
+
+## Paczka na Packagist.org
+> https://packagist.org/packages/liderit/mt940-converter
 
 ---
 
