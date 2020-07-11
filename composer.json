@@ -1,0 +1,33 @@
+{
+    "name": "liderit/mt940-converter",
+    "description": "#PHP7",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Arek N",
+            "email": "nowyarek@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "ext-json": "*",
+        "ext-mysqli": "*",
+        "kingsquare/php-mt940": "^1.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "MT940Converter\\": "",
+            "MT940Converter\\Bootstrap\\": "bootstrap",
+            "MT940Converter\\Exceptions\\": "exceptions",
+            "MT940Converter\\Models\\": "models"
+        },
+        "files": [
+            "bootstrap/Utils/dump.php",
+            "bootstrap/MySQL/getMysql.php"
+        ]
+    }
+}

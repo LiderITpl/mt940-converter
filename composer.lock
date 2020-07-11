@@ -1,0 +1,68 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "deec049b01c3bfe06c740bed2adf9134",
+    "packages": [
+        {
+            "name": "kingsquare/php-mt940",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fruitl00p/php-mt940.git",
+                "reference": "fa84ac9bc98675831bb082aa1dc97a9dad00b292"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fruitl00p/php-mt940/zipball/fa84ac9bc98675831bb082aa1dc97a9dad00b292",
+                "reference": "fa84ac9bc98675831bb082aa1dc97a9dad00b292",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kingsquare\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robin Speekenbrink",
+                    "email": "robin@kingsquare.nl"
+                }
+            ],
+            "description": "Simple MT940 parser in PHP",
+            "homepage": "https://github.com/fruitl00p/php-mt940",
+            "keywords": [
+                "mt940",
+                "parsing"
+            ],
+            "time": "2019-03-18T14:49:31+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.2.5",
+        "ext-json": "*",
+        "ext-mysqli": "*"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}
