@@ -2,7 +2,7 @@
     "name": "liderit/mt940-converter",
     "version": "1.0.1",
     "description": "#PHP7",
-    "type": "project",
+    "type": "library",
     "authors": [
         {
             "name": "Arek N",

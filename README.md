@@ -13,6 +13,7 @@
 
 ### Instalacja projektu
 1. `composer install`
+2. Importujemy export bazy danych MySQL z `storage\database\exports\XXX.sql`.
 
 Gotowe
 

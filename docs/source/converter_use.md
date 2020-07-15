@@ -23,7 +23,13 @@ $content = file_get_contents($doc);
 use MT940Converter\MT940Converter;
 
 try {
-  $converter = new MT940Converter($_ENV);
+  $mysqlCredentials = [
+    "MYSQL_HOST" => "localhost",
+    "MYSQL_USER" => "root",
+    "MYSQL_PASSWORD" => "",
+    "MYSQL_DB_NAME" => "mt940-converter"
+  ];
+  $converter = new MT940Converter($mysqlCredentials);
   $results = $converter->importDocument(file_get_contents($doc));
 } catch(Exception $e) {
   echo "Błąd";
